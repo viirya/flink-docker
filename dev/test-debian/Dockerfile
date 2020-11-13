@@ -57,7 +57,7 @@ RUN groupadd --system --gid=9999 flink && \
 WORKDIR $FLINK_HOME
 
 # Install Flink
-COPY flink-1.12-SNAPSHOT/* /opt/flink/
+COPY flink-1.12-SNAPSHOT /opt/flink
 RUN chown -R flink:flink .;
 
 # Configure container
